@@ -18,13 +18,13 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Post',
             fields=[
-                ('title', m models.CharField("Заголовок", max_length=200,default="")),
+                ('title',models.CharField("Заголовок", max_length=200,default="")),
                 ('text', models.TextField(max_length=1500)),
-                ('create', models.DateTimeField("Создан", auto_now_add=True)),
-                ('short', models.TextField("Краткое содержание", max_length=1000)),
-                ('update', models.DateTimeField("Обновлено",auto_now=True)),
-                ('moder', models.BooleanField("Модерация", default=False)),
-                ('image', mmodels.ImageField("Изображение", upload_to="blog" , blank=True)),
+                ('create',models.DateTimeField("Создан", auto_now_add=True)),
+                ('short',models.TextField("Краткое содержание", max_length=1000)),
+                ('update',models.DateTimeField("Обновлено",auto_now=True)),
+                ('moder',models.BooleanField("Модерация", default=False)),
+                ('image',models.ImageField("Изображение", upload_to="blog",blank=True)),
             ],
         ),
     ]
