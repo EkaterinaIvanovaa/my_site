@@ -4,4 +4,4 @@ __pycache__
 .DS_Store
 vokr
 db.sqlite3 
-
+/static 
