@@ -16,7 +16,7 @@ class Post(models.Model):
     text = models.TextField("Текст статьи", max_length=1500)
     create = models.DateTimeField("Создан", auto_now_add=True)
     short = models.TextField("Краткое содержание", max_length=1000)
-    image = models.ImageField("Изображение", upload_to="blog/" , blank=True)
+    image = models.ImageField("Изображение", upload_to="blog" , blank=True)
     update = models.DateTimeField("Обновлено",auto_now=True)
     moder = models.BooleanField("Модерация", default=False)
 
